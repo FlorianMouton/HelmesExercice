@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+@{
+    ViewBag.Title = "Index";
+}
+<form id="form" name="form" method="post" action="#">
+    Please enter your name and pick the Sectors you are currently involved in.
+
+    <br />
+    <br />
+    <label for="name">Name:</label>
+    <input name="name" type="text" id="name" onchange="valueChanged()">
+    <br />
+    <br />
+    <label for="sectors">Sectors:</label>
+    <select name="sectors" id="sectors" multiple size="5" onchange="valueChanged()">
+    </select>
+
+    <br />
+    <br />
+
+    <input name="terms" type="checkbox" id="terms" onchange="valueChanged()">
+    <label for="terms">Agree to terms</label>
+
+    <br />
+    <br />
+    <input type="submit" value="Save" id="save" onclick="Save()">
+</form>
